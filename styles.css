@@ -1,0 +1,58 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:
+        'topo topo'
+        'menu conteudo'
+        'rodape rodape'; 
+}
+
+header {
+    grid-area: topo;
+}
+
+nav {
+    grid-area: menu;
+}
+
+main {
+    grid-area: conteudo;
+}
+
+footer {
+    grid-area: rodape;
+}
+
+h1 {
+    position: absolute;
+    display: inline-block;
+    left: 480px;
+    top: 40px;
+}
+
+#foto-perfil {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid black;
+    margin-left: 10px;   
+}
+
+#menu {
+    text-align: center;
+    border: 5px solid black;
+    
+}
+
