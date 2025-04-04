@@ -23,6 +23,7 @@ header {
 }
 
 nav {
+    background-color: white;
     grid-area: menu;
 }
 
@@ -60,8 +61,8 @@ footer {
 h1 {
     position: absolute;
     display: inline-block;
-    left: 480px;
-    top: 40px;
+    left: 35%;
+    top: 5%;
 }
 
 #foto-perfil {
@@ -73,12 +74,12 @@ h1 {
     margin-left: 10px;   
 }
 
-#menu {
+.menu-atividades {
     text-align: center;
     border: 3px solid black;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     body {
         grid-template-areas:
         'topo'
@@ -90,4 +91,18 @@ h1 {
     nav {
         display: none;
     }
+
+    button {
+        visibility: visible;
+    }
+}
+
+button {
+    position: absolute;
+    border: none;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    right: 5%;
+    top: 5%;
 }
