@@ -26,6 +26,29 @@ nav {
     grid-area: menu;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: top;
+}
+
+tr:nth-child(even) { background-color: #ddd; }
+
+tr:hover { background-color: #bbb; }
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
 main {
     grid-area: conteudo;
 }
@@ -52,7 +75,19 @@ h1 {
 
 #menu {
     text-align: center;
-    border: 5px solid black;
-    
+    border: 3px solid black;
 }
 
+@media (max-width: 768px) {
+    body {
+        grid-template-areas:
+        'topo'
+        'menu'
+        'rodape';
+        grid-template-columns: 1fr; 
+    }
+
+    nav {
+        display: none;
+    }
+}
