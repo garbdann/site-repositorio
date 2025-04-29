@@ -2,15 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 body {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
-  background-color: #f4f4f4;
-  color: #333;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 }
 
 header {
@@ -20,16 +19,6 @@ header {
   text-align: center;
 }
 
-header nav {
-  margin-top: 10px;
-}
-
-header nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
 main {
   flex: 1;
   padding: 20px;
@@ -37,27 +26,34 @@ main {
   margin: auto;
 }
 
-.atividade {
+.card {
   display: flex;
-  flex-direction: row;
-  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: yellow;
   padding: 15px;
   margin-bottom: 20px;
   border-left: 6px solid #004d99;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  min-height: 80px;
+  min-width: 800px;
 }
 
-.atividade h2 {
-  margin-bottom: 10px;
+.card h2 {
+  font-size: 20px;
 }
 
-.atividade a {
-  position: absolute;
-  margin-left: 30%;
+.card a {
   color: #004d99;
   text-decoration: none;
-  cursor: pointer;
+  font-size: 36px;
+  transition: color 0.3s ease;
+}
+
+.card a:hover {
+  color: #0066cc;
 }
 
 footer {
